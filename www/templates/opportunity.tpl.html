@@ -1,0 +1,60 @@
+<ion-view title="Opportunity">
+  <ion-content class="has-header">
+
+
+          <div class="item">
+            <h2>{{ model.opportunity.personFullName }}</h2>
+            <p>{{model.opportunity.personCity}}, {{model.opportunity.personState}}</p>
+          </div>
+
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" ng-class="{energized: model.opportunity.isFavorite}" ng-click="model.opportunity.isFavorite = !model.opportunity.isFavorite">
+                <i class="icon ion-star"></i>
+                Favorite
+              </a>
+              <a class="tab-item" href="#/app/personMap/{{model.opportunity.entityId}}">
+                <i class="icon ion-earth"></i>
+                Map
+              </a>
+              <a class="tab-item" href="#/app/person/{{model.opportunity.entityId}}">
+                <i class="icon ion-person"></i>
+                Person
+              </a>
+          </div>
+        
+
+        <div class="list card">
+          <div class="item item-divider item-icon-left item-balanced">
+            <i class="icon ion-android-lightbulb"></i>
+            Opportunity
+          </div>
+
+          <div class="row">
+            <div class="col col-100">
+              <h5><span class="positive">Type</span><br>{{model.opportunity.oppType}}</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-100">
+              <h5><span class="positive">Amount</span><br>$ {{model.opportunity.amount}}</h5>
+            </div>
+          </div>          
+          <div class="row">
+            <div class="col col-100">
+              <h5><span class="positive">Due Date</span><br>{{model.opportunity.dueDate}}</h5>
+            </div>
+          </div>          
+
+      </div>
+
+
+
+    </div>
+
+  </ion-content>
+
+
+
+
+</ion-view>

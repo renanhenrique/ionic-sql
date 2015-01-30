@@ -1,0 +1,82 @@
+body, a[href]:hover, button, html input[type="button"], input[type="reset"], input[type="submit"], .tab-item:hover, .item[ng-click]:hover, .checkbox, .checkbox input, .checkbox-icon, .toggle .track, .item-radio, input[type="range"]::-webkit-slider-thumb, .item-select, .button {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+
+/* Google map */
+#map {
+  width: 100%;
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+/* Ionic map directive */
+map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* angular-google-map directive */
+.angular-google-map-container {
+	display: block;
+  	width: 100%;
+  	height: 100%;
+}
+.marker-labels {
+    background-color: white;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 160px;
+    border: 1px solid black;
+    white-space: nowrap;
+}
+.angular-google-map {
+  	display: block;
+  	width: 100%;
+  	height: 100%;
+}
+
+
+
+
+
+.grey, a.grey {
+  color: #666; }
+.bar-grey .button {
+  border-color: #555;
+  background-color: #666;
+  color: #fff; }
+.bar-grey .button:hover {
+  color: #fff;
+  text-decoration: none; }
+.bar-grey .button.active, .bar-grey .button.activated {
+  border-color: #555;
+  background-color: #555;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+.bar-grey .button.button-clear {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+  color: #fff;
+  font-size: 17px; }
+.bar-grey .button.button-icon {
+  border-color: transparent;
+  background: none; }
+.item.item-grey {
+    border-color: #555;
+    background-color: #666;
+    color: #fff; }
+.item.active.item-grey, .item.activated.item-grey, .item-complex.active .item-content.item-grey, .item-complex.activated .item-content.item-grey, .item .item-content.active.item-grey, .item .item-content.activated.item-grey {
+    border-color: #555;
+    background-color: #555; }
+.item-complex.item-grey > .item-content {
+  border-color: #555;
+  background-color: #666;
+  color: #fff; }
+.item-complex.item-grey > .item-content.active, .item-complex.item-grey > .item-content:active {
+    border-color: #555;
+    background-color: #555; }

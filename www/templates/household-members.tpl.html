@@ -1,0 +1,13 @@
+<view title="'Household Members'">
+
+    <content has-header="true">
+        <list>
+            <item ng-repeat="person in model.persons" type="item-text-wrap" href="#/person/{{person.id}}">
+                <h3>{{person.firstName}} {{person.lastName}}</h3>
+                <p>{{person.title}}</p>
+            </item>
+            </item>
+        </list>
+    </content>
+
+</view>

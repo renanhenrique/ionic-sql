@@ -1,0 +1,14 @@
+<!-- Model example: http://codepen.io/ionic/pen/gblny -->
+<ion-modal-view>
+	<ion-header-bar class="bar bar-header bar-positive">
+		<h1 class="title">Select an Agency</h1>
+		<button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+	</ion-header-bar>
+	<ion-content class="padding">
+		<div class="list">
+			<label class="item" ng-repeat="agency in USER.AGENCIES" ng-click="model.handleAgencySelect(agency)">
+				<h3>{{agency.name}}</h3>
+			</label>
+		</div>
+	</ion-content>
+</ion-modal-view>

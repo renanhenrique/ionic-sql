@@ -1,0 +1,15 @@
+<ion-view title="Map">
+
+  	<ion-content scroll="false" class="has-header">
+
+		<ui-gmap-google-map center="model.map.center" zoom="model.map.zoom" draggable="true" options="model.map.options" bounds="model.map.bounds">
+    		<ui-gmap-markers idkey="'id'" models="model.map.markers" coords="'self'" fit="model.map.fit" options="'options'" isLabel="true">
+        	</ui-gmap-markers>
+    	</ui-gmap-google-map>
+
+  	</ion-content>
+ 	<ion-footer-bar class="bar-stable">
+ 		<a ng-click="model.centerOnMe()" class="button button-icon icon ion-navigate"></a>
+  	</ion-footer-bar>
+</ion-view>
+

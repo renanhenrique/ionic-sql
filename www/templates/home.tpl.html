@@ -1,0 +1,67 @@
+<ion-view title="CRM Mobile">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content class="has-header">
+
+		<div class="list list-inset">
+			<div class="item item-divider item-balanced">
+				{{USER.AGENCY.name}}
+			</div>
+			
+			<a class="item item-icon-left" href="#/app/search">
+				<i class="icon ion-search"></i>
+				Contacts - Search
+			</a>
+			<a class="item item-icon-left" href="#/app/persons">
+				<i class="icon ion-person"></i>
+				Persons
+				<span ng-if="model.personCount==undefined" 	class="badge"><i class="item-icon ion-loading-c"></i></span>
+				<span ng-if="model.personCount" 			class="badge badge-assertive" ng-bind="model.personCount"><span>
+			</a>
+			<a class="item item-icon-left" href="#/app/households">
+				<i class="icon ion-ios7-people"></i>
+				Households
+				<span ng-if="model.householdCount==undefined" 	class="badge"><i class="item-icon ion-loading-c"></i></span>
+				<span ng-if="model.householdCount" 				class="badge badge-assertive" ng-bind="model.householdCount"><span>
+			</a>
+			<a class="item item-icon-left" href="#/app/companies">
+				<i class="icon ion-android-system-home"></i>
+				Companies
+				<span ng-if="model.companyCount==undefined" 	class="badge"><i class="item-icon ion-loading-c"></i></span>
+				<span ng-if="model.companyCount" 				class="badge badge-assertive" ng-bind="model.companyCount"><span>
+			</a>
+			<a class="item item-icon-left" href="#/app/favorites">
+				<i class="icon ion-star"></i>
+				Contacts - Favorites
+			</a>	
+			<a class="item item-icon-left" href="#/app/recentlyViewed">
+				<i class="icon ion-arrow-return-left"></i>
+				Contacts - Recently Viewed 
+			</a>
+			<a class="item item-icon-left" href="#/app/nearMe">
+				<i class="icon ion-pin"></i>
+				Contacts - Near Me
+			</a>
+			<a class="item item-icon-left" href="#/app/opportunities">
+				<i class="icon ion-android-lightbulb"></i>
+				Opportunities
+				<span ng-if="model.opportunityCount==undefined" 	class="badge"><i class="item-icon ion-loading-c"></i></span>
+				<span ng-if="model.opportunityCount" 				class="badge badge-assertive" ng-bind="model.opportunityCount"><span>
+			</a>
+			<a class="item item-icon-left" href="#/app/alerts">
+				<i class="icon ion-information-circled"></i>
+				Alerts
+				<span class="badge badge-assertive">1</span>
+			</a>
+		</div>
+
+		<div class="list list-inset">
+			<a class="button button-block button-balanced" ng-click="modal.show()">
+				Switch Agency
+			</a>
+		</div>
+
+		</div>
+	</ion-content>
+</ion-view>

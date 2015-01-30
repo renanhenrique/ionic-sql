@@ -1,0 +1,53 @@
+<ion-view title="Search">
+	<ion-content class="has-header">
+
+  		<ion-tabs class="tabs-striped tabs-background-positive tabs-color-light tabs-icon-only">
+
+  			<ion-tab icon="ion-person">
+
+	  			<ion-content>
+
+	  		    	<div class="list list-inset">
+						<label class="item item-input item-stacked-label">
+				    		<span class="input-label">First Name</span>
+				    		<input type="text" placeholder="">
+				  		</label>
+				  		<label class="item item-input item-stacked-label">
+				    		<span class="input-label">Last Name</span>
+				    		<input type="text" placeholder="">
+				  		</label>
+				  		<label class="item item-input item-stacked-label">
+				    		<span class="input-label">Phone</span>
+				    		<input type="text" placeholder="">
+				  		</label>
+				  		<button class="button button-block button-balanced icon-right ion-chevron-right" ng-click="model.searchPersons()">
+						  	Search
+						</button>		
+					</div>
+
+	  			</ion-content>
+	  		</ion-tab>
+		  	<ion-tab icon="ion-android-system-home">
+  				<ion-content>
+
+			    	<div class="list list-inset">
+						<label class="item item-input item-stacked-label">
+				    		<span class="input-label">Name</span>
+				    		<input type="text" placeholder="">
+				  		</label>
+				  		<label class="item item-input item-stacked-label">
+				    		<span class="input-label">Phone</span>
+				    		<input type="text" placeholder="">
+				  		</label>
+						<button class="button button-block button-balanced icon-right ion-chevron-right" ng-click="model.searchCompanies()">
+						  	Search
+						</button>		
+					</div>
+					
+				</ion-content>
+		  	</ion-tab>
+
+		</ion-tabs>
+
+	</ion-content>
+</ion-view>

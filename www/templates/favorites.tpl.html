@@ -1,0 +1,47 @@
+<ion-view title="Favorites">
+	<ion-content has-header="true">
+
+		<ion-tabs class="tabs-striped tabs-background-positive tabs-color-light tabs-icon-only">
+			<ion-tab icon="ion-person">
+	  			<ion-content>
+
+					<ion-list>
+					    <ion-item class="item-icon-right" ng-repeat="entity in model.persons" href="#/app/person/{{entity.id}}">
+					        <h3>{{entity.fullName}}</h3>
+					        <h4>{{entity.fullAddress}}</h4>
+					        <i class="icon ion-star" ng-class="{energized: entity.isFavorite}" ng-click="model.toggleFavorite(entity, $event)"></i>
+				      </ion-item>
+				    </ion-list>
+
+	  			</ion-content>
+	  		</ion-tab>
+		  	<ion-tab icon="ion-ios7-people">
+				<ion-content>
+
+			    	<ion-list>
+				    	<ion-item class="item-icon-right" ng-repeat="entity in model.households" href="#/app/household/{{entity.id}}">
+				        	<h3>{{entity.fullName}}</h3>
+							<h4>{{entity.fullAddress}}</h4>
+				        	<i class="icon ion-star" ng-class="{energized: entity.isFavorite}" ng-click="model.toggleFavorite(entity, $event)"></i>
+				      	</ion-item>
+				    </ion-list>
+
+				</ion-content>
+		  	</ion-tab>
+		  	<ion-tab icon="ion-android-system-home">
+				<ion-content>
+		    	
+					<ion-list>
+				    	<ion-item class="item-icon-right" ng-repeat="entity in model.companies" href="#/app/company/{{entity.id}}">
+				        	<h3>{{entity.fullName}}</h3>
+							<h4>{{entity.fullAddress}}</h4>
+				        	<i class="icon ion-star" ng-class="{energized: entity.isFavorite}" ng-click="model.toggleFavorite(entity, $event)"></i>
+				      </ion-item>
+				    </ion-list>
+
+				</ion-content>
+		  	</ion-tab>
+		</ion-tabs>
+
+	</ion-content>
+</ion-view>
