@@ -1,13 +1,22 @@
 {
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/renanhenrique/ionic-sql"
+  },
   "name": "ionic-sql",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "ionic-sql: An Ionic project",
   "dependencies": {
+    "clean-css": "^3.3.6",
     "gulp": "^3.5.6",
-    "gulp-sass": "^0.7.1",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
-    "gulp-rename": "^1.2.0"
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.1",
+    "jshint": "^2.8.0",
+    "ng-annotate": "^1.0.2",
+    "uglify-js": "^2.4.23"
   },
   "devDependencies": {
     "bower": "^1.3.3",
