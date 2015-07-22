@@ -4,14 +4,15 @@ Ionic app with SQLite/WebSQL
 ## Install and run this app
 
 ```bash
-$ git clone https://github.com/bengwall/ionic-sql.git
+$ https://github.com/renanhenrique/ionic-sql
 $ sudo npm install -g ionic cordova gulp
+$ sudo npm install
 ```
 
 ## Running on device
 
 ```bash
-$ ionic platform add ios
-$ ionic build ios
-$ ionic emulate ios
+$ ionic platform add android
+$ ionic build android
+$ ionic run android
 ```
